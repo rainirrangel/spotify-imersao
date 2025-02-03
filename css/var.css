@@ -2,9 +2,10 @@
     --corEscura00: #000000;
     --corEscura01: #121212;
     --corEscura02: #242424;
-    --corEscuraOpacidade: rgba(0,0,0,7)
+    --corEscuraOpacidade: rgba(0,0,0,7);
     --corClara00: #ffffff;
     --corClara01: #b3b3b3;
+    --corClara02: #a7a7a7;
     --corGradiente01: #C822FF;
     --corGradiente02: #1A6DFF;
     --fontPadrao: "DM Sans", sans-serif;

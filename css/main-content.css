@@ -1,8 +1,20 @@
+:root{
+--corEscura00: #000000;
+--corEscura01: #121212;
+--corEscura02: #242424;
+--corEscuraOpacidade: rgba(0,0,0,7);
+--corClara00: #ffffff;
+--corClara01: #b3b3b3;
+--corClara02: #a7a7a7;
+--corGradiente01: #C822FF;
+--corGradiente02: #1A6DFF;
+--fontPadrao: "DM Sans", sans-serif;
+}
+
 /*HEADER*/
 .mainConteiner {
     max-width: 80vw;
     height: 100vh;
-    display: flex;
     margin: 0 56px 0 320px;
 }
 
@@ -32,9 +44,89 @@
     justify-content: center;
     width: 32px;
     height: 32px;
-    background: ;
-    background-color: ;
+    background: var(--corEscura01);
+    background-color: var(--corEscuraOpacidade);
     border-radius: 50%;
     border: none;
     cursor: pointer;
+}
+
+.headerSearch {
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 48px;
+    margin-left: 8px;
+    background-color: var(--corEscura02);
+    border-radius: 500px;
+    border: 1px solid transparent;
+}
+
+.headerSearch:has(input:focus) {
+    border: 1px solid var(--corClara01);
+}
+
+.headerSearch:has(input:focus) input {
+    border: 0;
+    color: var(--corClara01);
+}
+
+.headerSearch img {
+    width: 16px;
+    height: 16px;
+    margin-left: 12px;
+}
+
+.headerSearch input {
+    background: transparent;
+    border: none;
+    padding: 0 100px 0 12px;
+    color: var(--corClara00);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+}
+
+.headerLogin {
+    display: flex;
+    align-items: center;
+}
+
+.headerLogin .subscribe{
+    color: var(--corClara02);
+    font-size: 1em;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 32px;
+}
+
+.headerLogin .subscribe:hover {
+    color: var(--corClara00);
+}
+
+.underlineAnimation {
+    position: relative;
+    transition: 0.3s;
+}
+
+.underlineAnimation::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: var(--corClara00);
+    transition: width 0.3s;
+}
+
+.underlineAnimation:hover:after {
+    width: 100%;
+}
+
+.headerLogin button {
+    margin: 0;
+    padding-left: 24px;
+    padding-right: 24px;
 }

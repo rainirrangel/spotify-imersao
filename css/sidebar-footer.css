@@ -153,7 +153,6 @@ a {
 
 .cookies a:hover {
     color: var(--corClara00);
-    text-decoration: underline;
 }
 
 .transparentButton{
