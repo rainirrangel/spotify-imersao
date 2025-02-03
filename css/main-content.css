@@ -1,0 +1,40 @@
+/*HEADER*/
+.mainConteiner {
+    max-width: 80vw;
+    height: 100vh;
+    display: flex;
+    margin: 0 56px 0 320px;
+}
+
+.headerNavigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: var(--corEscura00);
+}
+
+.headerNavigation .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerNavigation .navigation .arrowLeft {
+    margin-right: 1.25rem;
+}
+
+.arrowLeft, .arrowRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: ;
+    background-color: ;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
