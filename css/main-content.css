@@ -1,3 +1,16 @@
+:root {
+    --corEscura00: #000000;
+    --corEscura01: #121212;
+    --corEscura02: #242424;
+    --corEscuraOpacidade: rgba(0,0,0,7);
+    --corClara00: #ffffff;
+    --corClara01: #b3b3b3;
+    --corClara02: #a7a7a7;
+    --corGradiente01: #C822FF;
+    --corGradiente02: #1A6DFF;
+    --fontPadrao: "DM Sans", sans-serif;
+}
+
 /*HEADER*/
 .mainConteiner {
     max-width: 80vw;
@@ -116,4 +129,46 @@
     margin: 0;
     padding-left: 24px;
     padding-right: 24px;
+}
+
+/*CONTENT*/
+
+.mainContent {
+    height: 68vh;
+    padding-top: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--corEscura01);
+}
+
+.playlist {
+    
+}
+
+.offerScrollConteiner {
+    max-height: 43vh;
+    margin: 24px;
+    overflow-y: auto;
+}
+
+.offerListItem {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.cards {
+    position: relative;
+    width: 220px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.cards span {
+    padding: 16px;
+    position: absolute;
 }
